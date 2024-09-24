@@ -1,0 +1,34 @@
+---
+name: edlin
+base: core20
+version: '0.9.1'
+icon: meta/gui/icon.png
+license: MIT
+contact: rhubarb-geek-nz@users.sourceforge.net
+website: https://github.com/rhubarb-geek-nz/edlin
+source-code: https://github.com/rhubarb-geek-nz/edlin-snapcraft.git
+summary: Text Editor based on MS-DOS edlin
+description: |
+  Simple, interactive, command line text editor.
+  
+  Features
+  
+  * Written in ANSI C
+  * Highly portable
+  * No curses or other libraries required
+  * Uses temporary file to deal with large files.
+  * Works over SSH, including on Windows
+
+grade: stable
+confinement: strict
+
+parts:
+  edlin:
+    source: https://github.com/rhubarb-geek-nz/edlin/archive/refs/tags/0.9.1.tar.gz
+    plugin: make
+    make-parameters: [CFLAGS+="-Wall -Werror", edlin]
+
+apps:
+  edlin:
+    command: usr/bin/edlin
+    plugs: [home, network, network-bind, removable-media]
