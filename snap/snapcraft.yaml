@@ -1,12 +1,8 @@
 ---
 name: edlin
-base: core20
+base: core18
 version: '0.9.1'
 icon: meta/gui/icon.png
-license: MIT
-contact: rhubarb-geek-nz@users.sourceforge.net
-website: https://github.com/rhubarb-geek-nz/edlin
-source-code: https://github.com/rhubarb-geek-nz/edlin-snapcraft.git
 summary: Text Editor based on MS-DOS edlin
 description: |
   Simple, interactive, command line text editor.
@@ -26,7 +22,7 @@ parts:
   edlin:
     source: https://github.com/rhubarb-geek-nz/edlin/archive/refs/tags/0.9.1.tar.gz
     plugin: make
-    make-parameters: [CFLAGS+="-Wall -Werror", edlin]
+    make-parameters: [CFLAGS+=-Wall -Werror, edlin]
 
 apps:
   edlin:
