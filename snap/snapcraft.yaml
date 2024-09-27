@@ -1,6 +1,6 @@
 ---
 name: edlin
-base: core20
+base: core22
 version: '0.9.1'
 icon: meta/gui/icon.png
 license: MIT
