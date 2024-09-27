@@ -22,7 +22,7 @@ $ lxd init --auto
 The package description is in [snapcraft.yaml](snap/snapcraft.yaml).
 
 - The source is from [edlin](https://github.com/rhubarb-geek-nz/edlin).
-- The base is core20 for the majority environments or core18 for i386
+- The base is core22 for the majority of environments or core18 for i386
 - The program runs with `strict` sandboxing and uses interfaces to access files
 - The `make` plugin is used to perform `make` followed by `make install`.
 
@@ -61,14 +61,6 @@ $ sudo snap remove edlin
 ## Publishing
 
 `edlin` is built for multiple architectures. The majority are built using the snapcraft.io build pipeline and managed through the store web interface.
-
-### riscv64
-
-The `riscv64` snap package is built using Ubuntu 22.04 in a Qemu riscv64 environment and then uploaded using
-
-```
-$ snapcraft upload --release=stable edlin_0.9.1_riscv64.snap
-```
 
 ### i386
 
