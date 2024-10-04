@@ -1,7 +1,7 @@
 ---
 name: edlin
 base: core22
-version: '0.9.1'
+version: '0.9.4'
 icon: meta/gui/icon.png
 license: MIT
 contact: rhubarb-geek-nz@users.sourceforge.net
@@ -24,7 +24,7 @@ confinement: strict
 
 parts:
   edlin:
-    source: https://github.com/rhubarb-geek-nz/edlin/archive/refs/tags/0.9.1.tar.gz
+    source: https://github.com/rhubarb-geek-nz/edlin/archive/refs/tags/0.9.4.tar.gz
     plugin: make
     make-parameters: [CFLAGS+="-Wall -Werror", edlin]
 
