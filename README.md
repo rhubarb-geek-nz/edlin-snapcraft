@@ -37,13 +37,13 @@ $ snapcraft
 You can examine the contents with 
 
 ```
-$ unsquashfs -l edlin_0.9.1_amd64.snap
+$ unsquashfs -l edlin_0.9.4_amd64.snap
 ```
 
 Install with
 
 ```
-$ sudo snap install edlin_0.9.1_amd64.snap --dangerous
+$ sudo snap install edlin_0.9.4_amd64.snap --dangerous
 ```
 
 This can now be tested by running
@@ -62,18 +62,10 @@ $ sudo snap remove edlin
 
 `edlin` is built for multiple architectures. The majority are built using the snapcraft.io build pipeline and managed through the store web interface.
 
-### riscv64
-
-The `riscv64` snap package is built using Ubuntu 22.04 in a Qemu riscv64 environment and then uploaded using
-
-```
-$ snapcraft upload --release=stable edlin_0.9.1_riscv64.snap
-```
-
 ### i386
 
 The `i386` snap package is built using Ubuntu 18.04 running in an i686 VM and then uploaded using
 
 ```
-$ snapcraft upload --release=stable edlin_0.9.1_i386.snap
+$ snapcraft upload --release=stable edlin_0.9.4_i386.snap
 ```
