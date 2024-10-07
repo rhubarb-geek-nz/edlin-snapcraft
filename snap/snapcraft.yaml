@@ -29,7 +29,7 @@ parts:
   edlin:
     source: https://github.com/rhubarb-geek-nz/edlin/archive/refs/tags/0.9.6.tar.gz
     plugin: make
-    make-parameters: [CFLAGS+=-Wall -Werror -DEDLIN_BINDTEXTDOMAIN=\"/snap/edlin/current/usr/share/locale\", edlin]
+    make-parameters: [CFLAGS+="-Wall -Werror -DEDLIN_BINDTEXTDOMAIN=\"\\\"/snap/edlin/current/usr/share/locale\\\"\"", edlin]
 
 apps:
   edlin:
