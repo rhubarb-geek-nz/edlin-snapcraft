@@ -1,3 +1,5 @@
+![edlin logo](meta/gui/icon.png)
+
 # edlin-snapcraft
 
 ## Introduction
@@ -37,13 +39,13 @@ $ snapcraft
 You can examine the contents with 
 
 ```
-$ unsquashfs -l edlin_0.9.6_amd64.snap
+$ unsquashfs -l edlin_0.9.9_amd64.snap
 ```
 
 Install with
 
 ```
-$ sudo snap install edlin_0.9.6_amd64.snap --dangerous
+$ sudo snap install edlin_0.9.9_amd64.snap --dangerous
 ```
 
 This can now be tested by running
@@ -67,5 +69,5 @@ $ sudo snap remove edlin
 The `i386` snap package is built using Ubuntu 18.04 running in an i686 VM and then uploaded using
 
 ```
-$ snapcraft upload --release=stable edlin_0.9.6_i386.snap
+$ snapcraft upload --release=stable edlin_0.9.9_i386.snap
 ```
