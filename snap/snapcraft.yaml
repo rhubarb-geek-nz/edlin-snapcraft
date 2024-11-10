@@ -1,7 +1,7 @@
 ---
 name: edlin
 base: core18
-version: '0.9.9'
+version: '0.9.10'
 icon: meta/gui/icon.png
 summary: Text Editor based on MS-DOS edlin
 description: |
@@ -20,7 +20,7 @@ confinement: strict
 
 parts:
   edlin:
-    source: https://github.com/rhubarb-geek-nz/edlin/archive/refs/tags/0.9.9.tar.gz
+    source: https://github.com/rhubarb-geek-nz/edlin/archive/refs/tags/0.9.10.tar.gz
     plugin: make
     make-parameters: [CFLAGS+=-Wall -Werror -DEDLIN_BINDTEXTDOMAIN=\"/snap/edlin/current/usr/share/locale\", edlin]
 
